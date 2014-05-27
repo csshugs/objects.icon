@@ -4,7 +4,7 @@
   "authors": [
     "Dennis Heibuelt <dennis@csshugs.com>"
   ],
-  "description": "Icon next to text",
+  "description": "Icon besides text",
   "main": "_objects.icon.scss",
   "keywords": [
     "genesis",
