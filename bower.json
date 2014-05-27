@@ -1,0 +1,15 @@
+{
+  "name": "genesis-icon",
+  "version": "0.1.0",
+  "authors": [
+    "Dennis Heibuelt <dennis@csshugs.com>"
+  ],
+  "description": "Icon next to text",
+  "main": "_objects.icon.scss",
+  "keywords": [
+    "genesis",
+    "css"
+  ],
+  "license": "Apache",
+  "homepage": "https://github.com/TryGenesis/objects.icon"
+}

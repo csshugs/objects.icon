@@ -1,0 +1,125 @@
+/*------------------------------------*\
+    $ICON
+\*------------------------------------*/
+/**
+ * Icon left, text right
+ *
+<div class="icon">
+    <i class="i i--home"></i>
+    <span class="icon__text">Lorem ipsum dolor sit</span>
+</div>
+ *
+ * Define width and height for .i in your stylesheet
+ *
+ */
+$icon-spacing:                  halve($inuit-base-spacing-unit) !default;
+$icon-spacing--small:           quarter($icon-spacing) !default;
+$icon-spacing--large:           $icon-spacing !default;
+
+$enable-icon--small:            false !default;
+$enable-icon--large:            false !default;
+$enable-icon--rev:              false !default;
+
+
+.icon,
+%icon{
+    display: table;
+}
+    .i,
+    %i{
+        display: table-cell;
+        padding-right: $icon-spacing;
+        vertical-align: middle;
+    }
+
+    .icon__text{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+
+@if ($enable-icon--small == true){
+
+    /**
+     * Icons with small gutter
+     */
+    .icon--small,
+    %icon--small{
+
+        > .i,
+        > %i{
+            padding-right: $icon-spacing--small;
+        }
+
+        @if ($enable-icon--rev == true){
+
+            /**
+             * Reversed icons with small gutter
+             */
+            &.icon--rev,
+            &%icon--rev{
+
+                > .i,
+                > %i{
+                    padding-left: $icon-spacing--small;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@if ($enable-icon--large == true){
+
+    /**
+     * Icons with large gutter
+     */
+    .icon--large,
+    %icon--large{
+
+        > .i,
+        > %i{;
+            padding-right: $icon-spacing--large;
+        }
+
+        @if ($enable-icon--rev == true){
+
+            /**
+             * Reversed icons with large gutter
+             */
+            &.icon--rev,
+            &%icon--rev{
+
+                > .i,
+                > %i{
+                    padding-left: $icon-spacing--large;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@if ($enable-icon--rev == true){
+
+    /**
+     * Icon right, text left
+     *
+    <div class="icon">
+        <span class="icon__text">Lorem ipsum dolor sit</span>
+        <i class="i i--home"></i>
+    </div>
+     *
+     */
+    .icon--rev,
+    %icon--rev{
+
+        > .i,
+        > %i{
+            padding-left: $icon-spacing;
+            padding-right: 0;
+        }
+    }
+}
