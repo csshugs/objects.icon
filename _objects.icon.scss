@@ -24,14 +24,14 @@ $enable-icon--rev:              false !default;
 .icon,
 %icon{
     display: table;
-}
+
     .i,
     %i{
         display: table-cell;
         padding-right: $icon-spacing;
         vertical-align: middle;
     }
-
+}
     .icon__text{
         display: table-cell;
         vertical-align: middle;
