@@ -1,15 +1,16 @@
 /*------------------------------------*\
-    $ICON
+    #ICON
 \*------------------------------------*/
+
 /**
- * Icon left, text right
+ * Icon left, text right.
  *
 <div class="icon">
     <i class="i i--home"></i>
     <span class="icon__text">Lorem ipsum dolor sit</span>
 </div>
  *
- * Define width and height for .i in your stylesheet
+ * Define width and height for .i in your stylesheet.
  *
  */
 $icon-spacing:                  halve($inuit-base-spacing-unit) !default;
@@ -38,10 +39,13 @@ $enable-icon--rev:              false !default;
     }
 
 
+
+
+
 @if ($enable-icon--small == true){
 
     /**
-     * Icons with small gutter
+     * Icons with small gutter.
      */
     .icon--small,
     %icon--small{
@@ -54,7 +58,7 @@ $enable-icon--rev:              false !default;
         @if ($enable-icon--rev == true){
 
             /**
-             * Reversed icons with small gutter
+             * Reversed icons with small gutter.
              */
             &.icon--rev,
             &%icon--rev{
@@ -70,10 +74,13 @@ $enable-icon--rev:              false !default;
 }
 
 
+
+
+
 @if ($enable-icon--large == true){
 
     /**
-     * Icons with large gutter
+     * Icons with large gutter.
      */
     .icon--large,
     %icon--large{
@@ -86,7 +93,7 @@ $enable-icon--rev:              false !default;
         @if ($enable-icon--rev == true){
 
             /**
-             * Reversed icons with large gutter
+             * Reversed icons with large gutter.
              */
             &.icon--rev,
             &%icon--rev{
@@ -102,10 +109,13 @@ $enable-icon--rev:              false !default;
 }
 
 
+
+
+
 @if ($enable-icon--rev == true){
 
     /**
-     * Icon right, text left
+     * Icon right, text left.
      *
     <div class="icon">
         <span class="icon__text">Lorem ipsum dolor sit</span>
