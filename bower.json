@@ -1,19 +1,20 @@
 {
-  "name": "genesis-icon",
-  "version": "0.1.4",
+  "name": "inuit-icon",
+  "version": "0.1.5",
+  "homepage": "https://github.com/TryGenesis/objects.icon",
   "authors": [
     "Dennis Heibuelt <dennis@csshugs.com>"
   ],
   "description": "Icon besides text",
   "main": "_objects.icon.scss",
   "keywords": [
-    "genesis",
+    "inuitcss",
+    "oocss",
     "css"
   ],
   "license": "Apache",
-  "homepage": "https://github.com/TryGenesis/objects.icon",
   "dependencies": {
-    "inuit-defaults": "~0.2.0",
+    "inuit-defaults": "~0.2.1",
     "inuit-functions": "~0.2.0"
   }
 }
