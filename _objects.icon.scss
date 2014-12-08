@@ -22,6 +22,9 @@ $inuit-enable-icon--large:            false !default;
 $inuit-enable-icon--rev:              false !default;
 
 
+
+
+
 .icon,
 %icon{
     display: table;
@@ -73,10 +76,6 @@ $inuit-enable-icon--rev:              false !default;
     }
 }
 
-
-
-
-
 @if ($inuit-enable-icon--large == true){
 
     /**
@@ -107,10 +106,6 @@ $inuit-enable-icon--rev:              false !default;
         }
     }
 }
-
-
-
-
 
 @if ($inuit-enable-icon--rev == true){
 
