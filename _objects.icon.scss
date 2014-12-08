@@ -14,8 +14,8 @@
  *
  */
 $inuit-icon-spacing:                  halve($inuit-base-spacing-unit) !default;
-$inuit-icon-spacing--small:           quarter($icon-spacing) !default;
-$inuit-icon-spacing--large:           $icon-spacing !default;
+$inuit-icon-spacing--small:           quarter($inuit-icon-spacing) !default;
+$inuit-icon-spacing--large:           $inuit-icon-spacing !default;
 
 $inuit-enable-icon--small:            false !default;
 $inuit-enable-icon--large:            false !default;
