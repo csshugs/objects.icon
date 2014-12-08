@@ -13,13 +13,13 @@
  * Define width and height for .i in your stylesheet.
  *
  */
-$icon-spacing:                  halve($inuit-base-spacing-unit) !default;
-$icon-spacing--small:           quarter($icon-spacing) !default;
-$icon-spacing--large:           $icon-spacing !default;
+$inuit-icon-spacing:                  halve($inuit-base-spacing-unit) !default;
+$inuit-icon-spacing--small:           quarter($icon-spacing) !default;
+$inuit-icon-spacing--large:           $icon-spacing !default;
 
-$enable-icon--small:            false !default;
-$enable-icon--large:            false !default;
-$enable-icon--rev:              false !default;
+$inuit-enable-icon--small:            false !default;
+$inuit-enable-icon--large:            false !default;
+$inuit-enable-icon--rev:              false !default;
 
 
 .icon,
@@ -29,7 +29,7 @@ $enable-icon--rev:              false !default;
     .i,
     %i{
         display: table-cell;
-        padding-right: $icon-spacing;
+        padding-right: $inuit-icon-spacing;
         vertical-align: middle;
     }
 }
@@ -42,7 +42,7 @@ $enable-icon--rev:              false !default;
 
 
 
-@if ($enable-icon--small == true){
+@if ($inuit-enable-icon--small == true){
 
     /**
      * Icons with small gutter.
@@ -52,10 +52,10 @@ $enable-icon--rev:              false !default;
 
         > .i,
         > %i{
-            padding-right: $icon-spacing--small;
+            padding-right: $inuit-icon-spacing--small;
         }
 
-        @if ($enable-icon--rev == true){
+        @if ($inuit-enable-icon--rev == true){
 
             /**
              * Reversed icons with small gutter.
@@ -65,7 +65,7 @@ $enable-icon--rev:              false !default;
 
                 > .i,
                 > %i{
-                    padding-left: $icon-spacing--small;
+                    padding-left: $inuit-icon-spacing--small;
                     padding-right: 0;
                 }
             }
@@ -77,7 +77,7 @@ $enable-icon--rev:              false !default;
 
 
 
-@if ($enable-icon--large == true){
+@if ($inuit-enable-icon--large == true){
 
     /**
      * Icons with large gutter.
@@ -87,10 +87,10 @@ $enable-icon--rev:              false !default;
 
         > .i,
         > %i{;
-            padding-right: $icon-spacing--large;
+            padding-right: $inuit-icon-spacing--large;
         }
 
-        @if ($enable-icon--rev == true){
+        @if ($inuit-enable-icon--rev == true){
 
             /**
              * Reversed icons with large gutter.
@@ -100,7 +100,7 @@ $enable-icon--rev:              false !default;
 
                 > .i,
                 > %i{
-                    padding-left: $icon-spacing--large;
+                    padding-left: $inuit-icon-spacing--large;
                     padding-right: 0;
                 }
             }
@@ -112,7 +112,7 @@ $enable-icon--rev:              false !default;
 
 
 
-@if ($enable-icon--rev == true){
+@if ($inuit-enable-icon--rev == true){
 
     /**
      * Icon right, text left.
@@ -128,7 +128,7 @@ $enable-icon--rev:              false !default;
 
         > .i,
         > %i{
-            padding-left: $icon-spacing;
+            padding-left: $inuit-icon-spacing;
             padding-right: 0;
         }
     }
